@@ -1,20 +1,20 @@
 
-def question_input(phrase_affiche):
-    entrer = input(phrase_affiche)
-    valide = False
+def question_input(display_sentence):
+    entrer = input(display_sentence)
+    valid = False
     try:
         entrer = int(entrer)
-        valide = True
+        valid = True
     except:
-        valide = False
-    while not valide:
-        print("_" * 50  + "\n"+ "Entré pas bonne !")
-        entrer = input(phrase_affiche)
+        valid = False
+    while not valid:
+        print("_" * 50  + "\n"+ "Not valid ! ")
+        entrer = input(display_sentence)
         try :
             entrer =int(entrer)
-            valide = True
+            valid = True
         except:
-            valide = False
+            valid = False
     return entrer
 
 
