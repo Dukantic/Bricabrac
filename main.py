@@ -18,3 +18,8 @@ def question_input(display_sentence):
     return entrer
 
 
+number_people = question_input("Number of people in your event : ")
+number_women = question_input("Number of women in your event : ")
+number_men = question_input("Number of men in your event : ")
+number_boy = question_input('Number of little boys in your event ')
+
