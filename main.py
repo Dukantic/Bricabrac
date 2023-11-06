@@ -14,7 +14,7 @@ def question_input(display_sentence):
             entrer =int(entrer)
             valid = True
         except:
-            valid = False
+            valid = False 
     return entrer
 
 
@@ -26,10 +26,10 @@ number_people = number_women + number_men + number_boy
 interation = number_people * (number_people - 1)
 
 
-number_total_kiss = (number_people + number_boy) * (number_people-1) * number_kiss
+number_total_kiss = (number_women+ number_boy) * (number_people-1) * number_kiss 
 number_total_handshake = number_men * (number_men - 1)
 print('~' * 50)
-print(f"""In your event, for a total of {number_people} peole, \n
+print(f"""In your event, for a total of {number_people} peoples, \n
 the number of kisses is {number_total_kiss}, \n
 the number of handshake is {number_total_handshake},\n
 the number of possibilities for transmitting the disease is {interation}.""")
