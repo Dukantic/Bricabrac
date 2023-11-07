@@ -1,28 +1,19 @@
 import math
+from function_usefull import *
+
+explanation_kiss = """
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| For your event, this function allows you to know the number of kisses, |
+|     handshake and possibilities for transmitting the disease.          |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+"""
 def kiss():
-    def question_input(display_sentence):
-        entrer = input(display_sentence)
-        valid = False
-        try:
-            entrer = int(entrer)
-            valid = True
-        except:
-            valid = False
-        while not valid:
-            print("_" * 50  + "\n"+ "Not valid ! ")
-            entrer = input(display_sentence)
-            try :
-                entrer =int(entrer)
-                valid = True
-            except:
-                valid = False 
-        return entrer
+    print(explanation_kiss)
 
-
-    number_women = question_input("Number of women in your event : ")
-    number_men = question_input("Number of men in your event : ")
-    number_boy = question_input('Number of little boys in your event : ')
-    number_kiss = abs(question_input("Number of kiss you do with one person : "))
+    number_women = number_input("Number of women in your event : ")
+    number_men = number_input("Number of men in your event : ")
+    number_boy = number_input('Number of little boys in your event : ')
+    number_kiss = abs(number_input("Number of kiss you do with one person : "))
 
     if number_kiss == 0:
         number_men += number_women + number_boy
