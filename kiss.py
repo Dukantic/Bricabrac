@@ -1,12 +1,7 @@
 import math
 from function_usefull import *
+from variable import *
 
-explanation_kiss = """
-|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
-| For your event, this function allows you to know the number of kisses, |
-|     handshake and possibilities for transmitting the disease.          |
-|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
-"""
 def kiss():
     print(explanation_kiss)
 
@@ -21,12 +16,12 @@ def kiss():
         number_boy = 0
 
     number_people = number_women + number_men + number_boy
-    interation = math.comb(number_people, 2)
+    interation = math.comb(int(number_people), 2)
     number_total_kiss =  (number_women+ number_boy) * (number_people-1) * number_kiss 
-    number_total_handshake = math.comb(number_men,2)
+    number_total_handshake = math.comb(int(number_men),2)
 
     print('~' * 50)
-    print(f"""In your event, for a total of {number_people} peoples, \n
-    the number of kisses is {number_total_kiss}, \n
-    the number of handshake is {number_total_handshake},\n
-    the number of possibilities for transmitting the disease is {interation}.""")
+    print(f"""In your event, for a total of {int(number_people)} peoples, \n
+    the number of kisses is {int(number_total_kiss)}, \n
+    the number of handshake is {int(number_total_handshake)},\n
+    the number of possibilities for transmitting the disease is {int(interation)}.""")
