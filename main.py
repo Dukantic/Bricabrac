@@ -1,11 +1,13 @@
 from kiss import kiss
 from philipe_unit import philipe
+from russian_roulette import russian_roulette
 from function_usefull import *
 
 txt_user_enter = "User say : "
 DICO_FUNCTION = {"description" : description,
                   "kiss" : kiss,
                   "philipe" : philipe,
+                  "russian roulette" : russian_roulette,
                   "exit" : None}
 
 print(f"Welcome to Bricabrac !")
