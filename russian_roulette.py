@@ -95,4 +95,3 @@ def russian_roulette():
         perdant = game_ak47(players, kill_bullet)
 
     print(f"The player {perdant} is dead with the bullet number {kill_bullet}")
-russian_roulette()
