@@ -17,6 +17,14 @@ explanation_exit = """
 | Exit the program and goodbye |
 |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
 """
+explanation_russian_roulette = """
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+|            <russian roulette>                |
+|  Just a Russian roulette with a bot (random) |
+|    lightsaber(1/2)      revolver(1/6)        |
+|      ak47(1/30, burst mod or semi-auto)      |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+"""
 LISTE_EXPLANATION = (explanation_exit, explanation_kiss, explanation_philipe)
 
-LISTE_FUNCTION = ('kiss', 'philipe', 'exit')
+LISTE_FUNCTION = ('kiss', 'philipe', 'exit', 'russianroulette')
