@@ -19,7 +19,7 @@ def number_input(display_sentence):
         return entrer
 
 def description():
-    for string in LISTE_EXPLANATION:
+    for string in LIST_EXPLANATION:
         print(string)
 
 def bool_input(display_sentence):
