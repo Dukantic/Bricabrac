@@ -20,7 +20,7 @@ def game(players, kill_bullet,ammo):
     complete = False
     bullet = 1
     while not complete:
-        _ = input("Enter to continue:")
+        _ = input("Enter to shoot:")
         print_suspense()
         player_turn = players[0]
         if bullet == kill_bullet:
@@ -39,7 +39,7 @@ def game_ak47(players, kill_bullet):
     complete = False
     bullet = 0
     while not complete:
-        _ = input("Enter to continue:")
+        _ = input("Enter to shoot:")
         number_bullet = 1
         player_turn = players[0]
         if player_turn == 'user':
