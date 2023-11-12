@@ -25,6 +25,6 @@ explanation_russian_roulette = """
 |      ak47(1/30, burst mod or semi-auto)      |
 |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
 """
-LISTE_EXPLANATION = (explanation_exit, explanation_kiss, explanation_philipe)
+LISTE_EXPLANATION = (explanation_exit, explanation_kiss, explanation_philipe, explanation_russian_roulette)
 
 LISTE_FUNCTION = ('kiss', 'philipe', 'exit', 'russianroulette')
